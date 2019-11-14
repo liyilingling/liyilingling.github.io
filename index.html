@@ -24,10 +24,11 @@
             <nav class="main-menu">
                 <ul>
                     <li><a href="#home">我</a></li>
-                    <li><a href="./yiyezi.html">好</a></li>
+                    <li><a href="#services">好</a></li>
                     <li><a href="#clients">难</a></li>
                     <li><a class="external" href="./home.html" target="_blank">啊</a></li>
                     <li><a href="#contact">！</a></li>
+                    <li><a href="./home.html" target="_blank" id="qes">?</a></li>
                 </ul>
             </nav>
         </div>
@@ -150,6 +151,10 @@
     <script src="js/jquery.singlePageNav.min.js"></script>
 
     <script>
+        qes.onclick=function(){
+            location.href='./yiyezi.html'
+        }
+
         // Check scroll position and add/remove background to navbar
         function checkScrollPosition() {
             if ($(window).scrollTop() > 50) {
