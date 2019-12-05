@@ -15,16 +15,16 @@
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle">
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>                        
-			</button>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
                 <a class="navbar-brand" href="#">Puzzle</a>
             </div>
             <nav class="main-menu">
                 <ul>
                     <li><a href="#home" onclick='location.href="./task/index.html"'>项目(药品研发)</a></li>
-                    <li><a href="#services">💗</a></li>
+                    <li><a href="#services" onclick='location.href="./ws/index.html"'>第九个月月考</a></li>
                     <li><a href="#clients">💗</a></li>
                     <li><a class="external" href="./home.html" target="_blank">手打作业</a></li>
                     <li><a href="./week/index.html" onclick='location.href="./week/index.html"'>第二次周考作业</a></li>
@@ -42,7 +42,7 @@
             <div class="col-lg-6 col-md-6 content-item content-item-1 background">
                 <h2 class="main-title text-center dark-blue-text">欢迎来到我的博客</h2>
                 <p>我们一直在旅行，一直在等待某个人可以成为 <span class="light-blue-text">我们旅途的伴侣，</span>陪我们走过一段别人无法替代的记忆。</p>
-                <p>在那里，有我们特有的记忆，亲情之忆、友谊之花、 <span class="light-blue-text">爱情之树、以及遗憾之泪!   </p>
+                <p>在那里，有我们特有的记忆，亲情之忆、友谊之花、 <span class="light-blue-text">爱情之树、以及遗憾之泪! </p>
                 <button type="button" class="btn btn-big dark-blue-bordered-btn">离开</button>
                 <button type="button" class="btn btn-big dark-blue-btn">关注</button>
             </div>
@@ -74,7 +74,8 @@
             </div>
             <div class="col-lg-6 col-md-6 content-item background flexbox">
                 <h2 class="section-title">我的梦想</h2>
-                <p>有时间，我们可以去爬山，去看日出，去散步，去欣赏大自然，去陌生的街角，去做一切我们曾经或现在也很想做的事情，可以有一个人陪着你，也可以你一个人，总之那一刻，你是自由的，不仅是身体上的自由，更重要的是心理上的完全自由和放松，你会发现，曾经以为很难做到的事情，其实只要你愿意，一切都可以变得很容易</p>
+                <p>有时间，我们可以去爬山，去看日出，去散步，去欣赏大自然，去陌生的街角，去做一切我们曾经或现在也很想做的事情，可以有一个人陪着你，也可以你一个人，总之那一刻，你是自由的，不仅是身体上的自由，更重要的是心理上的完全自由和放松，你会发现，曾经以为很难做到的事情，其实只要你愿意，一切都可以变得很容易
+                </p>
                 <p>只想进行一场漫无目的的旅行，在一个有花有海、安静缓慢的地方晒着太阳无所事事。</p>
                 <p>我是在旅行吗？也许是的。没有行囊，没有目的，我孤独的走在路上，看不见我将要去的地方，记不得我已经去过的地方。我就想是一只草原中被牧童遗忘的羊，只能昏昏沉沉地沿着青草和泥土的气息前进。 </p>
                 <p>想呼吸着每座城市的空气，想感受着每座城市的人儿，想看着每座城市的风景。 </p>
@@ -109,12 +110,14 @@
                     </div>
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <div class="form-group contact-field">
-                            <input name="subject" type="text" class="form-control" id="subject" placeholder="建议" required>
+                            <input name="subject" type="text" class="form-control" id="subject" placeholder="建议"
+                                required>
                         </div>
                     </div>
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <div class="form-group contact-field">
-                            <textarea name="message" rows="5" class="form-control" id="message" placeholder="你的信息" required></textarea>
+                            <textarea name="message" rows="5" class="form-control" id="message" placeholder="你的信息"
+                                required></textarea>
                         </div>
                     </div>
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -151,8 +154,8 @@
     <script src="js/jquery.singlePageNav.min.js"></script>
 
     <script>
-        qes.onclick=function(){
-            location.href='./yiyezi.html'
+        qes.onclick = function () {
+            location.href = './yiyezi.html'
         }
 
         // Check scroll position and add/remove background to navbar
@@ -164,7 +167,7 @@
             }
         }
 
-        $(document).ready(function() {
+        $(document).ready(function () {
             // Single page nav
             $('.fixed-header').singlePageNav({
                 offset: 59,
@@ -175,16 +178,16 @@
             checkScrollPosition();
 
             // nav bar
-            $('.navbar-toggle').click(function() {
+            $('.navbar-toggle').click(function () {
                 $('.main-menu').toggleClass('show');
             });
 
-            $('.main-menu a').click(function() {
+            $('.main-menu a').click(function () {
                 $('.main-menu').removeClass('show');
             });
         });
 
-        $(window).on("scroll", function() {
+        $(window).on("scroll", function () {
             checkScrollPosition();
         });
     </script>
